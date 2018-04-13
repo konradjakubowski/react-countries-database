@@ -17,15 +17,15 @@ class ContinentsContainer extends Component {
 	}
 
 	componentDidMount() {
-		this.props.dispatch(setContinent('Europe'));
+		this.props.dispatch(setContinent('Europa'));
 	}
 
 	render() {
 		return (
 			<div>
 				<select onChange={e => this.chooseContinent(e)}>
-					<option value="Europe">Europe</option>
-					<option value="Africa">Africa</option>
+					<option value="Europa">Europe</option>
+					<option value="Afryka">Africa</option>
 				</select>
 				<CountryFlagList countries={this.props.visibleCountries} deleteCountry={this.deleteCountry.bind(this)} />
 			</div>
