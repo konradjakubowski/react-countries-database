@@ -29,7 +29,6 @@ const countriesReducer = function (state = initialState, action) {
             const continentCountries = state.countries.filter(country => country.continent === action.name);
             return Object.assign({}, state, {visibleCountries: continentCountries});
     }
-
     return state;
 };
 

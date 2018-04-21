@@ -8,21 +8,18 @@ const CountryDetails = (props) => (
         <div className="country-info">
             <h1>{props.country.name}</h1>
             <h2>Continent: {props.country.continent}</h2>
-
             <div className="info">
                 <div>
+                    <span>Population: </span>
                     <span>{props.country.populace}</span>
-                    <span>Population[mln]</span>
                 </div>
-
                 <div>
+                    <span>Capital: </span>
                     <span>{props.country.capital}</span>
-                    <span>Capital</span>
                 </div>
-
                 <div>
+                    <span>Currency: </span>
                     <span>{props.country.currency}</span>
-                    <span>Currency</span>
                 </div>
             </div>
         </div>
